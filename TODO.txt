@@ -6,5 +6,13 @@
     - [ ] Phone
   - [ ] Remove user
   - [ ] Add user
-
 - [ ] Add an order via TUI
+- [ ] Add userID to order (for reverse lookup)
+- [ ] Finalise documentation for GUI and TUI (these will ideally not be changing)
+
+- [ ] Move interfacing to REST and deprecate GUI and TUI
+  - [ ] /api/v1/user/{id} (GET, POST, PUT, DELETE)
+  - [ ] /api/v1/user/{id}/orders (GET, PUT)
+  - [ ] /api/v1/order/{id} (GET, DELETE)
+- [ ] Move datastore from JSON to SQLite (moderately less cumbersome to work with)
+
