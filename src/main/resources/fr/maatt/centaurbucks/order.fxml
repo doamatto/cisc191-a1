@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.maatt.centaurbucks.RewardsController"
+            prefHeight="400.0" prefWidth="600.0">
+    <GridPane>
+        <HBox GridPane.rowIndex="0">
+            <Label text="Order number :" />
+            <Text fx:id="orderNumber" />
+        </HBox>
+        <VBox GridPane.rowIndex="1">
+
+            <HBox>
+                <Label text="Points used :" />
+                <TextArea fx:id="pointsUsed" />
+                <Label text="Order total" />
+                <Text fx:id="orderTotal" />
+            </HBox>
+        </VBox>
+        <HBox GridPane.rowIndex="2">
+            <Button text="Tender order" fx:id="tendOrder"
+                    onAction="#onTendOrderClick" />
+        </HBox>
+    </GridPane>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.HBox?>
+<GridPane alignment="TOP_CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="fr.maatt.centaurbucks.RewardsController" hgap="10" vgap="5">
+    <padding><Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/></padding>
+
+    <GridPane GridPane.rowIndex="0" >
+        <HBox alignment="BASELINE_LEFT" spacing="5">
+            <Label text="Search for customer by reward ID :"
+                   GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="searchUserID" GridPane.columnIndex="1"
+                       GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" />
+            <Button text="Search" onAction="#onSearchBtnClick"
+                    GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" />
+            <Button text="Create user" onAction="#onAddUserClick"
+                    GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" />
+        </HBox>
+    </GridPane>
+
+    <GridPane GridPane.rowIndex="2" alignment="BASELINE_LEFT">
+        <HBox GridPane.rowIndex="2" alignment="BASELINE_LEFT" spacing="5">
+            <Label text="First name :" />
+            <TextField fx:id="firstName" />
+            <Label text="Last name :" />
+            <TextField fx:id="lastName" />
+            <Label text="Points :" />
+            <Text fx:id="pointTotal" text="0" />
+        </HBox>
+        <HBox GridPane.rowIndex="3" alignment="BASELINE_LEFT" spacing="5">
+            <Label text="Email address :" />
+            <TextField fx:id="email" />
+            <Label text="Phone number (EPP format) :" />
+            <TextField fx:id="phone" />
+        </HBox>
+    </GridPane>
+    <GridPane GridPane.rowIndex="5" alignment="BASELINE_LEFT">
+        <HBox GridPane.rowIndex="5" alignment="BASELINE_LEFT" spacing="5" fx:id="orderHistory">
+            <Text text="Order history" />
+        </HBox>
+
+    </GridPane>
+    <GridPane GridPane.rowIndex="8" alignment="BASELINE_LEFT">
+        <HBox GridPane.rowIndex="8" alignment="BASELINE_LEFT" spacing="5">
+            <Button text="Update user" fx:id="updateUser" onAction="#onUpdateUserClick" />
+            <Button text="Remove user" fx:id="removeUser" onAction="#onRemoveUserClick" />
+        </HBox>
+    </GridPane>
+</GridPane>

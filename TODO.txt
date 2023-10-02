@@ -1,0 +1,10 @@
+- [ ] Add an order via GUI
+- [ ] Create TUI
+  - [ ] Manage user’s
+    - [ ] Name (first and last)
+    - [ ] Email
+    - [ ] Phone
+  - [ ] Remove user
+  - [ ] Add user
+
+- [ ] Add an order via TUI
